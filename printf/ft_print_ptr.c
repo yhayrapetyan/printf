@@ -15,14 +15,14 @@
 
 static void	ft_put_ptr(unsigned long long ptr)
 {
-	if (ptr > 15)
+	if (ptr >= 16)
 	{
 		ft_put_ptr(ptr / 16);
 		ft_put_ptr(ptr % 16);
 	}
 	else
 	{
-		if (ptr > 9)
+		if (ptr < 10)
 			ft_print_char(('0' + ptr));
 		else
 			ft_print_char(('a' + ptr - 10));

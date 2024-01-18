@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-static int	get_digits(int n)
+static int	get_digits(unsigned int n)
 {
 	int	i;
 

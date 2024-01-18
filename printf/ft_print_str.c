@@ -17,6 +17,11 @@ int	ft_print_str(const char *s)
 	int	i;
 
 	i = 0;
+	if (s == NULL)
+	{
+		ft_print_str("(null)");
+		return (6);
+	}
 	while (s[i])
 	{
 		ft_print_char(s[i]);

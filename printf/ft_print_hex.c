@@ -12,11 +12,13 @@
 
 #include "ft_printf.h"
 
-static int	ft_hex_len(int n)
+static int	ft_hex_len(unsigned int n)
 {
 	int	len;
 
 	len = 0;
+	if (n == 0)
+		len++;
 	while (n != 0)
 	{
 		len++;
@@ -25,7 +27,7 @@ static int	ft_hex_len(int n)
 	return (len);
 }
 
-static void	ft_write_hex(int n, const char format)
+static void	ft_write_hex(unsigned int n, const char format)
 {
 	if (n >= 16)
 	{
