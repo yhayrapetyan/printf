@@ -11,7 +11,7 @@ OBJS = $(SRC:.c=.o)
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 NAME =libftprintf.a
-RM = rm -r
+RM = rm -f
 AR = ar rc
 LIB_INDEX = ranlib
 

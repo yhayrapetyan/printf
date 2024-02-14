@@ -6,12 +6,11 @@
 /*   By: yuhayrap <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 14:41:50 by yuhayrap          #+#    #+#             */
-/*   Updated: 2024/01/17 14:41:52 by yuhayrap         ###   ########.fr       */
+/*   Updated: 2024/02/14 15:19:19 by yuhayrap         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
 
 static void	ft_put_ptr(unsigned long long ptr)
 {
